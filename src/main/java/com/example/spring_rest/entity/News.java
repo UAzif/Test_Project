@@ -8,10 +8,8 @@ public class News {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-
     @Column(name="name_of_news")
     private String nameOfNews;
-
 
 
     @ManyToOne(cascade = CascadeType.ALL)
