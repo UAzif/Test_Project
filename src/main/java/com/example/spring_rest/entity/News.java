@@ -12,6 +12,7 @@ public class News {
     private String nameOfNews;
 
 
+
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "source_id")
     private Source source;
@@ -54,5 +55,5 @@ public class News {
         this.source = source;
     }
 
-
+//
 }
